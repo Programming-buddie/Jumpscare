@@ -1,49 +1,59 @@
 @keyframes scare {
-    0%{
-        transform: scale(1)
-    };
-    50%{
-        transform: scale(2)
-    }
-    75%{
-        transform: scale(3)
-    }
-    100%{
-        transform: scale(4)
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  75% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(4);
+  }
 }
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Share+Tech+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Share+Tech+Mono&display=swap");
 body {
-  background:radial-gradient(ellipse at 50% 40%, rgba(280, 0, 0, 0.18),transparent 100%), #301010;
+  background:
+    radial-gradient(
+      ellipse at 50% 40%,
+      rgba(280, 0, 0, 0.18),
+      transparent 100%
+    ),
+    #301010;
   display: flex;
   justify-content: center;
   padding: 8rem;
   background-repeat: no-repeat;
   color: #e8e0e0;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   margin: 0rem;
+  gap: 5rem;
+  flex-direction: column;
 }
-section{
-    display: flex;
-    flex-direction: column;
-    
+section {
+  display: flex;
+  flex-direction: column;
 }
-h2{
-    margin-top: -1rem;
+h2 {
+  margin-top: -1rem;
 }
-img{
-    width: 23rem;
-    height:fit-content;
-    position: fixed;
-    box-shadow: 0 0 12px rgba(255, 0,0, 8);
-    top: 50px;
-    
-    animation-name: scare;
-    animation-duration: 0.08s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+p{
+    margin-bottom: -1rem;
+}
+img {
+  width: 23rem;
+  height: fit-content;
+  position: fixed;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 8);
+  top: 50px;
+
+  animation-name: scare;
+  animation-duration: 0.08s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 .loading-container {
   display: flex;
@@ -54,24 +64,29 @@ img{
   padding: 2.5rem;
   outline: 1px solid #301010;
   justify-content: center;
-  align-items: center;
+  align-self: center;
   /* box-shadow: 7px 7px 0px 3px #0f0f33; */
-  box-shadow: 0 0 12px rgba(255, 0,0, 8);
+  box-shadow: 0 0 12px rgba(255, 0, 0, 8);
+  max-width: 50rem;
+  max-height: 20rem;
 }
-/* #301010 */
 .loading-bar {
   display: flex;
   flex-direction: row;
-  background: radial-gradient(ellipse at center, transparent 20%,rgba(100,0,0, 0.85) 100%);
+  background: radial-gradient(
+    ellipse at center,
+    transparent 20%,
+    rgba(100, 0, 0, 0.85) 100%
+  );
   border: none;
   border-radius: 8px;
   padding: 5px;
   outline: 1px solid white;
-  width: 240px;
-  height: 106px;
+  width: 12rem;
+  height: 6rem;
 }
 .fill-bar {
-  background-color: rgba(125, 0,0, 8);
+  background-color: rgba(125, 0, 0, 8);
   display: flex;
   flex-direction: column;
   border: none;
@@ -81,17 +96,31 @@ img{
   outline: 1px solid #0b0707;
   margin: 0.5rem;
 }
-button{
-    
-    background-color: #301010;
-    padding: 0.5rem;
-    border-radius: 8px;
-    border: none;
-    margin: 1rem;
-    outline-width: 0.5px;
-    outline-style: solid;
-    outline-color: orangered;
-   color: white;
-   box-shadow: 0px 5px rgba(125, 0,0, 8);
-   font-family: 'Creepster', cursive;
+button {
+  background-color: #301010;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  margin: 1rem;
+  outline-width: 0.5px;
+  outline-style: solid;
+  outline-color: orangered;
+  color: white;
+  box-shadow: 0px 5px rgba(125, 0, 0, 8);
+  font-family: "Creepster", cursive;
+  width: 15rem;
+}
+.old{
+    align-self: center;
+}
+.loadButton{
+    font-size: 2rem;
+}
+.jumpscare {
+  display: flex;
+  justify-content: center;
+}
+.jumpscare button {
+  position: fixed;
+  font-size: 2rem;
 }
