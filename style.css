@@ -1,3 +1,17 @@
+@keyframes scare {
+    0%{
+        transform: scale(1)
+    };
+    50%{
+        transform: scale(2)
+    }
+    75%{
+        transform: scale(3)
+    }
+    100%{
+        transform: scale(5)
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Share+Tech+Mono&display=swap');
 body {
   background:radial-gradient(ellipse at 50% 40%, rgba(280, 0, 0, 0.18),transparent 100%), #050505;
@@ -12,8 +26,22 @@ section{
     flex-direction: column;
     
 }
-h4{
+h2{
     margin-top: -1rem;
+}
+img{
+    width: 23rem;
+    height:fit-content;
+    position: fixed;
+    box-shadow: 0 0 12px rgba(255, 0,0, 8);
+    top: 50px;
+    
+    animation-name: scare;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 .loading-container {
   display: flex;
