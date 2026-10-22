@@ -11,6 +11,10 @@ body {
   justify-content: center;
   padding: 8rem;
 }
+section{
+    display: flex;
+    flex-direction: column;
+}
 h4{
     margin-top: -1rem;
 }
@@ -24,6 +28,7 @@ h4{
   outline: 1px solid white;
   justify-content: center;
   align-items: center;
+  box-shadow: 7px 7px 0px 3px #0f0f33;
 }
 .loading-bar {
   display: flex;
@@ -46,4 +51,14 @@ h4{
   width: 2rem;
   outline: 1px solid white;
   margin: 0.5rem;
+}
+button{
+    
+    background-color: #1f1fad;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    margin: 1rem;
+   color: white;
+   box-shadow: 0px 5px #0f0f33;
 }
