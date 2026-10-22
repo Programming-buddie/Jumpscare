@@ -9,7 +9,10 @@ body {
   background-color: #a8a8f0;
   display: flex;
   justify-content: center;
-  align-content: center;
+  padding: 8rem;
+}
+h4{
+    margin-top: -1rem;
 }
 .loading-container {
   display: flex;
@@ -24,6 +27,7 @@ body {
 }
 .loading-bar {
   display: flex;
+  flex-direction: row;
   background-color: #5252e0;
   border: none;
   border-radius: 8px;
