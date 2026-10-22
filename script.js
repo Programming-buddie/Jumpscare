@@ -1,9 +1,19 @@
 const loading = document.querySelector("h4")
-
+const button = document.querySelector("button")
 const fillBar = document.querySelectorAll(".fill-bar")
 
+button.addEventListener("click", loader)
+button.addEventListener("click", animatebi)
 
-for (let index = 0; index < fillBar.length; index++) {
+
+function animatebi() {
+    button.style.boxShadow = "0px 3px #0f0f33"
+    setTimeout(() => {
+        button.style.boxShadow = "0px 5px #0f0f33"
+    }, 100)
+}
+function loader() {
+    for (let index = 0; index < fillBar.length; index++) {
         const element = fillBar[index];
         setTimeout(() => {
             element.style.display = "flex"
@@ -11,7 +21,9 @@ for (let index = 0; index < fillBar.length; index++) {
         }, index*1500);
         
         setTimeout(() => {
-            // document.body.style.opacity = index/0.04+"%"
+            //document.body.style.opacity = index/0.04+"%"
             console.log(index/0.04+"%")
         }, index*1500);
     }
+
+}
