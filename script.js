@@ -1,4 +1,4 @@
-const loading = document.querySelector("h4");
+
 const oldbutton = document.querySelector(".loadButton");
 const fillBar = document.querySelectorAll(".fill-bar");
 const img = document.querySelector("img");
@@ -37,6 +37,6 @@ function loader() {
             newButton.style.display = "block"
         }, 1700);
       }
-    }, index * 1000);
+    }, index * 300);
   }
 }
